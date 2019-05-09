@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.lang.Math; 
 public class Lotto
 {
     private class Sample
@@ -86,4 +87,6 @@ public class Lotto
         double p = (double) counter / (double) size ;
         System.out.println("The probability of such a sample is:" + p + "Or as a fraction" + counter + " / " + size); 
     }
+	
+
 } 
