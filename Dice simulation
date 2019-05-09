@@ -112,6 +112,8 @@ sample objects. Hence, all 46656 outcomes of rolling 6 dice are created and save
         System.out.println("The probability of such a sample is: " + p + " Or as a fraction " + counter + " / " + size); 
     }
 
+//Roll N times method: This simply prints out the outcomes of rolling the 6 dice N times, which is inputted by the user. 
+
  public void rollNtimes(int n)
     {
  	int sum = 0; 
