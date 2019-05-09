@@ -1,0 +1,40 @@
+#define _CRT_SECURE_NO_DEPRECATE
+#include <stdio.h>
+
+unsigned int algorithm(unsigned int, unsigned int); 
+
+int main (void)
+{
+	unsigned int end = 0; 
+	unsigned int base = 0; 
+	
+	printf("Please enter the last number, or the limit \n"); 
+	scanf("%u", &end); 
+	getchar(); 
+	
+	printf("Please enter the integer which divides from zero to this limit \n"); 
+	scanf("%u", &base);
+	getchar(); 
+	
+	printf("The numbers divisible by %u between zero and %u are: %u", base, end, algorithm(end, base) );
+	getchar(); 
+	
+	return 0; 
+	
+}
+
+
+unsigned int algorithm(unsigned int end, unsigned int base)
+{
+	unsigned int div = end % base; 
+	
+	if( div == 0)
+	{
+		return 1 + (end / base ); 
+	}
+	else if( div != 0 )
+	{
+		end -= div; 
+		return 1 + (end/ base); 
+	}
+}
