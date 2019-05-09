@@ -67,6 +67,7 @@ other methods.
     public Lotto() 
     {
         space = new ArrayList<Sample>(); 
+	generator = new Random(); 
         enumerateSpace(); 
     } 
     
