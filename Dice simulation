@@ -1,5 +1,12 @@
+/**
+ * Lotto class. Consists of Lotto, with inner class Sample, Lotto contains a field that is an arraylist that stores Sample objects. 
+ * This lotto class provides all outcomes of rolling 6, 6 sided dice. It can be extended to more dice, and with more sides. 
+ * @author Kirti Vardhan
+ * @version 1.3
+ */
+
 import java.util.ArrayList;
-import java.lang.Math; 
+
 public class Lotto
 {
     private class Sample
