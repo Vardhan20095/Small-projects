@@ -9,8 +9,14 @@ import java.util.ArrayList;
 
 public class Lotto
 {
+
+// The inner class sample, which is basically supposed to be the tuple, of length 6 integers. It provides the constructor, sum and some 
+other methods. 
+
     private class Sample
     {
+    
+    // 6 integer tuple for 6 dice rolled, the length of the tuple will be equal to the number of dice rolled. 
         int a; 
         int b; 
         int c;
@@ -49,15 +55,21 @@ public class Lotto
         {
             return (this.a + this.b + this.c + this.d + this.e + this. f );
         } 
-    } 
+    }  
+    
+       // The arraylist which stores all the outcomes of rolling the dice. 
+       
     private ArrayList<Sample> space; 
     
-    
+    // Constructor 
     public Lotto() 
     {
         space = new ArrayList<Sample>(); 
         enumerateSpace(); 
     } 
+    
+    //Enumerate space method: This creates the sample space, using nested for loops that range from 1 to 6, 6 of these, creating new 
+sample objects. Hence, all 46656 outcomes of rolling 6 dice are created and saved in the arraylist. 
     
     private void enumerateSpace()
     {
@@ -76,7 +88,9 @@ public class Lotto
                                  Sample addend = new Sample(a,b,c,d,e,f); 
                                  space.add(addend); 
                              } } } } } }  }
-    
+   
+   // This method getProbability returns the probability of the outcome you enter. 
+   
     public void getProbability(int a, int b, int c, int d, int e, int f)
     {
         Sample match = new Sample(a,b,c,d,e,f); 
@@ -92,7 +106,7 @@ public class Lotto
             }
         }
         double p = (double) counter / (double) size ;
-        System.out.println("The probability of such a sample is:" + p + "Or as a fraction" + counter + " / " + size); 
+        System.out.println("The probability of such a sample is: " + p + " Or as a fraction " + counter + " / " + size); 
     }
 	
 
