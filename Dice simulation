@@ -6,6 +6,8 @@
  */
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Random; 
 
 public class Lotto
 {
@@ -108,6 +110,24 @@ sample objects. Hence, all 46656 outcomes of rolling 6 dice are created and save
         double p = (double) counter / (double) size ;
         System.out.println("The probability of such a sample is: " + p + " Or as a fraction " + counter + " / " + size); 
     }
+
+ public void rollNtimes(int n)
+    {
+ 	int sum = 0; 
+	double avg = 0; 
+
+	for(int i = 1; i <= n; i ++)
+	{
+      		Sample returned =  space.get( generator.nextInt( space.size() - 1 ) );
+		System.out.println(" Roll  number: " + i + " ");
+		returned.printSample(); 
+		sum += returned.sum();
+		Collections.shuffle(space); 
+	} 
 	
+	avg = sum / n; 
+	System.out.println("The average value of the sum of these rolls is: " + avg); 
+	  
+    }
 
 } 
