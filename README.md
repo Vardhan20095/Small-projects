@@ -6,5 +6,5 @@ The sides can be increased and the number of dice can be too, but that would mor
 https://qr.ae/TWImFE
 
 
-2. Finding the total number of numbers divisible between ZERO and any positive number (Language = C) by a BASE number. Its a small program I made that returns the total number of integers between zero and N that are divisible by Z. It does not use iteration directly but my own method: 
+2. Numbers divisible: Weirdly named file in which finding the total number of numbers divisible between ZERO and any positive number (Language = C) by a BASE number. Its a small program I made that returns the total number of integers between zero and N that are divisible by Z. It does not use iteration directly but my own method: 
 https://qr.ae/TWImCr
