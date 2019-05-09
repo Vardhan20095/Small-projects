@@ -6,4 +6,5 @@ The sides can be increased and the number of dice can be too, but that would mor
 
 The sample object is an inner class within Lotto that models each element of the sample space. 
 
-2. Finding the total number of numbers divisible by others. 
+2. Finding the total number of numbers divisible between ZERO and any positive number by a BASE number. Its a small program I made that returns the total number of integers between zero and N that are divisible by Z. It does not use iteration directly but my own method: 
+https://qr.ae/TWImCr
