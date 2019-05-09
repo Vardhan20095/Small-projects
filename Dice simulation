@@ -72,7 +72,7 @@ other methods.
     } 
     
     //Enumerate space method: This creates the sample space, using nested for loops that range from 1 to 6, 6 of these, creating new 
-sample objects. Hence, all 46656 outcomes of rolling 6 dice are created and saved in the arraylist. 
+//sample objects. Hence, all 46656 outcomes of rolling 6 dice are created and saved in the arraylist. 
     
     private void enumerateSpace()
     {
@@ -112,7 +112,8 @@ sample objects. Hence, all 46656 outcomes of rolling 6 dice are created and save
         System.out.println("The probability of such a sample is: " + p + " Or as a fraction " + counter + " / " + size); 
     }
 
-//Roll N times method: This simply prints out the outcomes of rolling the 6 dice N times, which is inputted by the user. 
+//Roll N times method: This simply prints out the outcomes of rolling the 6 dice N times, which is inputted by the user. It reshuffles
+// the sample space after each roll to ensure maximum randomness.
 
  public void rollNtimes(int n)
     {
