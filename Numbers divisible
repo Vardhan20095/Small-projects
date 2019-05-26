@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_DEPRECATE
 #include <stdio.h>
 
-unsigned int algorithm(unsigned int, unsigned int); 
+unsigned int numbersDiv(unsigned int, unsigned int); 
 
 int main (void)
 {
@@ -16,7 +16,7 @@ int main (void)
 	scanf("%u", &base);
 	getchar(); 
 	
-	printf("The numbers divisible by %u between zero and %u are: %u", base, end, algorithm(end, base) );
+	printf("The numbers divisible by %u between zero and %u are: %u", base, end, numbersDiv(end, base) );
 	getchar(); 
 	
 	return 0; 
@@ -24,7 +24,7 @@ int main (void)
 }
 
 
-unsigned int algorithm(unsigned int end, unsigned int base)
+unsigned int numbersDiv(unsigned int end, unsigned int base)
 {
 	unsigned int div = end % base; 
 	
