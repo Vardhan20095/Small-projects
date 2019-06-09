@@ -32,7 +32,7 @@ unsigned int numbersDiv(unsigned int end, unsigned int base)
 	{
 		return 1 + (end / base ); 
 	}
-	else if( div != 0 )
+	else 
 	{
 		end -= div; 
 		return 1 + (end/ base); 
